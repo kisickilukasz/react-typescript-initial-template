@@ -2,11 +2,11 @@ import ReactDOM from 'react-dom/client';
 import { App } from '../app';
 
 const rootMock = {
-  render: jest.fn(),
+  render: jest.fn()
 };
 
 jest.mock('react-dom/client', () => ({
-  createRoot: jest.fn(() => rootMock),
+  createRoot: jest.fn(() => rootMock)
 }));
 
 describe('Root DOM', () => {
